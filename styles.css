@@ -1,20 +1,5 @@
-table {
-  background-color: white;
-  border-collapse: collapse;
-  border: 2px solid rgb(140 140 140);
-  font-family: sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-}
-
-caption {
-  caption-side: bottom;
-  padding: 10px;
-  font-weight: bold;
-}
-
-.canvas {
-  align-items: center;
+body {
+  background-color: rgb(146, 112, 60);
 }
 
 .myimage {
@@ -22,6 +7,37 @@ caption {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  text-align: center;
+}
+
+.imagecolumn {
+  /* border-collapse: separate; */
+  /* border: solid rgb(250, 250, 250) 1px; */
+  width: 250px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.workhistory {
+  /* border-collapse: separate; */
+  /* border: solid rgb(250, 250, 250) 1px; */
+  width: 250px;
+  border-style: none;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
 }
 
 thead,
@@ -39,12 +55,6 @@ td:last-of-type {
   text-align: center;
 }
 
-td:first-child {
-  border-left-style: solid;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
 tbody > tr:nth-of-type(even) {
   background-color: rgb(237 238 242);
 }
@@ -57,6 +67,13 @@ tfoot td {
   font-weight: bold;
 }
 
-body {
-  background-color: rgb(146, 112, 60);
+.table-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-right {
+  position: absolute;
+  top: 0;
+  right: -400px; /* Adjust the value to position the text as needed */
 }
